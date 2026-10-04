@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amal Afenich | Big Data & AI Engineer</title>
+<meta name="description" content="Portfolio of First Last, final-year engineering student in Big Data & AI at ENSA Tétouan">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR (replace FL and First Last with your initials and name) ===== -->
+<header class="nav">
+  <a class="brand" href="#home"><b>AA</b>Amal Afenich</a>
+  <nav>
+    <a href="#home" class="on">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#certificates">Certificates</a><a href="#education">Education</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#extracurricular">Extracurricular</a><a href="#cv">CV</a>
+  </nav>
+  <div class="nr"><div class="langsw" role="group" aria-label="Language / Langue"><button type="button" data-l="en" class="on" aria-pressed="true">EN</button><button type="button" data-l="fr" aria-pressed="false">FR</button></div><a class="btn primary sm" href="#contact">Contact me ↗</a></div>
+</header>
+
+<main>
+<!-- ===== HOME ===== -->
+<section class="hero" id="home">
+  <div class="hero-text">
+    <span class="badge">FINAL-YEAR ENGINEERING STUDENT AT ENSA TÉTOUAN</span>
+    <h1>Hi, I'm <em>Amal Afenich</em><br>I teach data to think, predict and decide.</h1>
+    <p>Big Data and AI engineering student, turning raw data into models and dashboards that lead to better decisions.</p>
+    <div class="actions">
+      <a class="btn primary" href="#projects">View my projects ↗</a>
+      <a class="btn outline" href="#cv">Download my CV ⤓</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="stage">
+      <p class="quote">Data tells the story, AI shapes the future.</p>
+    <div class="photo">
+      <img class="me" src="photo-removebg.png" alt="Amal Afenich">
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="about-text">
+      <span class="badge">ABOUT ME</span>
+      <h2>A curious engineer, <i>driven by data.</i></h2>
+      <p>I'm Amal Afenich, a final-year Big Data and Artificial Intelligence student, rigorous, autonomous and highly motivated, with a strong ability to learn and a genuine interest in new technologies. I commit fully to every project in order to build effective, relevant data-driven solutions.
+During my studies, I have worked on several academic projects involving data manipulation, training Machine Learning models, and using Big Data tools to analyze and process large volumes of data.</p>
+    </div>
+    <!-- Replace about.jpg with your photo (same folder as index.html) -->
+    <div class="aphoto"><img src="photo-removebg.png" alt="First Last"></div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS (carousel) ===== -->
+<section class="projects" id="projects">
+  <div class="sec-head"><div><span class="badge">PROJECTS</span><h2>What I've <i>built.</i></h2></div></div>
+  <div class="car">
+    <button class="arrow l" id="pPrev" aria-label="Previous project">←</button>
+    <div class="track ptrack" id="pTrack">
+      <article class="slide pcard"><div class="ph"><span>01 / PROJECT</span><span>PYTHON · NLP · MONGODB · ANOMALY DETECTION</span></div><div class="pb"><div class="shot s1 fit"><img src="img/biosentry-architecture.png" alt="BioSentry architecture: sources, NLP, MongoDB, clustering and anomaly detection, alert level, dashboard" loading="lazy"></div><div class="pt"><small>MACHINE LEARNING · NLP · PHARMACOVIGILANCE</small><h3>BioSentry: early detection of drug side effects</h3><p>Pharmacovigilance platform that collects 7 public medical sources, extracts side effects with BioBERT, then flags weak signals with clustering and anomaly detection.</p><ul class="tags"><li>Python</li><li>BioBERT</li><li>MongoDB</li><li>Scikit-learn</li></ul><div class="pf"><a href="https://github.com/amalafenich/biosentry" target="_blank" rel="noopener">GitHub</a><button class="btn outline sm" type="button" data-p="0">View details ↗</button></div></div></div></article>
+      <article class="slide pcard"><div class="ph"><span>02 / PROJECT</span><span>AZURE ML · MLFLOW · GITHUB ACTIONS · DOCKER</span></div><div class="pb"><div class="shot s2 fit"><img src="img/mlops-architecture.png" alt="MLOps architecture on Azure: pipeline, MLflow, GitHub Actions, Docker, A/B endpoint" loading="lazy"></div><div class="pt"><small>MLOPS · CI/CD · DEPLOYMENT</small><h3>California Housing MLOps pipeline</h3><p>End-to-end MLOps chain on Azure ML: automated training with a hyperparameter sweep, conditional model registration, CI/CD with GitHub Actions and A/B deployment behind a REST endpoint.</p><ul class="tags"><li>Azure ML</li><li>MLflow</li><li>GitHub Actions</li><li>Docker</li></ul><div class="pf"><a href="https://github.com/amalafenich/mlops-california-housing" target="_blank" rel="noopener">GitHub</a><button class="btn outline sm" type="button" data-p="1">View details ↗</button></div></div></div></article>
+      <article class="slide pcard"><div class="ph"><span>03 / PROJECT</span><span>KAFKA · SPARK · INFLUXDB · GRAFANA</span></div><div class="pb"><div class="shot s3 fit"><img src="img/weather-pipeline.png" alt="Weather streaming pipeline architecture: APIs, Kafka, Spark, InfluxDB, Grafana" loading="lazy"></div><div class="pt"><small>DATA ENGINEERING · STREAMING</small><h3>Real-time weather streaming pipeline</h3><p>Live weather data from two APIs streamed through Kafka, processed with Spark Structured Streaming and stored in InfluxDB for Grafana dashboards.</p><ul class="tags"><li>Kafka</li><li>Spark Streaming</li><li>InfluxDB</li><li>Grafana</li><li>Docker</li></ul><div class="pf"><a href="https://github.com/amalafenich/weather-streaming-pipeline" target="_blank" rel="noopener">GitHub</a><button class="btn outline sm" type="button" data-p="2">View details ↗</button></div></div></div></article>
+      <article class="slide pcard"><div class="ph"><span>04 / PROJECT</span><span>TENSORFLOW · CNN · MEDIAPIPE · FASTAPI</span></div><div class="pb"><div class="shot s1"><img src="img/asl-demo.png" alt="SignSense AI interface recognizing the letter O" loading="lazy"></div><div class="pt"><small>DEEP LEARNING · COMPUTER VISION</small><h3>SignSense AI: ASL sign language recognition</h3><p>Real-time web app that recognizes the ASL alphabet from the webcam: MediaPipe tracks the hand, a CNN classifies it and the interface builds text.</p><ul class="tags"><li>TensorFlow</li><li>CNN</li><li>MediaPipe</li><li>FastAPI</li><li>React</li></ul><div class="pf"><a href="https://github.com/amalafenich/asl-sign-language-recognition" target="_blank" rel="noopener">GitHub</a><button class="btn outline sm" type="button" data-p="3">View details ↗</button></div></div></div></article>
+      <article class="slide pcard"><div class="ph"><span>05 / PROJECT</span><span>PYTHON · MEDIAPIPE · OPENCV · PYGAME</span></div><div class="pb"><div class="shot s2 fit"><img src="img/car-game.png" alt="Hand-gesture car game: camera window detecting five fingers and the game window" loading="lazy"></div><div class="pt"><small>COMPUTER VISION · GESTURE CONTROL</small><h3>Hand-gesture car game</h3><p>A 2D dodging game played with hand gestures: MediaPipe reads the webcam, a detector counts raised fingers and the car reacts in real time in Pygame.</p><ul class="tags"><li>Python</li><li>MediaPipe</li><li>OpenCV</li><li>Pygame</li></ul><div class="pf"><a href="https://github.com/amalafenich/car-game" target="_blank" rel="noopener">GitHub</a><button class="btn outline sm" type="button" data-p="4">View details ↗</button></div></div></div></article>
+    </div>
+    <button class="arrow r" id="pNext" aria-label="Next project">→</button>
+  </div>
+</section>
+
+<!-- ===== CERTIFICATES (carousel) ===== -->
+<section class="certs" id="certificates">
+  <div class="sec-head"><div><span class="badge">CERTIFICATES</span><h2>Certifications I've <i>earned.</i></h2></div></div>
+  <div class="track ctrack" id="cTrack">
+    <article class="slide ccard"><div class="cimg"><img src="img/certs/supervised-learning.jpg" alt="Certificate: Supervised Machine Learning: Regression and Classification" loading="lazy"></div><div class="cm"><small>MACHINE LEARNING</small><span>Coursera · Jun 2025</span></div><h3>Supervised Machine Learning: Regression and Classification</h3><p>Linear and logistic regression, gradient descent and regularization, taught by Andrew Ng with DeepLearning.AI and Stanford Online.</p><a class="btn outline sm" href="https://coursera.org/verify/42ZVYWNLBYIR" target="_blank" rel="noopener">View credential ↗</a></article>
+    <article class="slide ccard"><div class="cimg"><img src="img/certs/advanced-learning.jpg" alt="Certificate: Advanced Learning Algorithms" loading="lazy"></div><div class="cm"><small>DEEP LEARNING</small><span>Coursera · Oct 2025</span></div><h3>Advanced Learning Algorithms</h3><p>Neural networks, decision trees and tree ensembles, with practical advice for building and evaluating machine learning systems.</p><a class="btn outline sm" href="https://coursera.org/verify/K9IOXIBVJSO0" target="_blank" rel="noopener">View credential ↗</a></article>
+    <article class="slide ccard"><div class="cimg"><img src="img/certs/pyspark.jpg" alt="Certificate: Big Data Fundamentals with PySpark" loading="lazy"></div><div class="cm"><small>BIG DATA</small><span>DataCamp · Apr 2025</span></div><h3>Big Data Fundamentals with PySpark</h3><p>Large-scale data processing with PySpark: RDDs, DataFrames and Spark MLlib.</p><a class="btn outline sm" href="certs/pyspark.pdf" target="_blank" rel="noopener">View credential ↗</a></article>
+    <article class="slide ccard"><div class="cimg"><img src="img/certs/big-data-101.jpg" alt="Certificate: Big Data 101" loading="lazy"></div><div class="cm"><small>BIG DATA</small><span>IBM · Cognitive Class</span></div><h3>Big Data 101</h3><p>Introductory course on big data concepts and the technologies used to store and process large datasets.</p><a class="btn outline sm" href="certs/big-data-101.pdf" target="_blank" rel="noopener">View credential ↗</a></article>
+    <article class="slide ccard"><div class="cimg"><img src="img/certs/power-bi-intro.jpg" alt="Certificate: Introduction to Power BI" loading="lazy"></div><div class="cm"><small>BUSINESS INTELLIGENCE</small><span>DataCamp · Nov 2025</span></div><h3>Introduction to Power BI</h3><p>Loading, transforming and visualizing data to build reports and dashboards.</p><a class="btn outline sm" href="certs/power-bi-intro.pdf" target="_blank" rel="noopener">View credential ↗</a></article>
+    <article class="slide ccard"><div class="cimg"><img src="img/certs/power-bi-dax.jpg" alt="Certificate: Introduction to DAX in Power BI" loading="lazy"></div><div class="cm"><small>BUSINESS INTELLIGENCE</small><span>DataCamp · Nov 2025</span></div><h3>Introduction to DAX in Power BI</h3><p>Writing DAX measures and calculated columns to add custom calculations to Power BI models.</p><a class="btn outline sm" href="certs/power-bi-dax.pdf" target="_blank" rel="noopener">View credential ↗</a></article>
+    <article class="slide ccard"><div class="cimg"><img src="img/certs/sql-intermediate.jpg" alt="Certificate: Intermediate SQL" loading="lazy"></div><div class="cm"><small>SQL</small><span>DataCamp · Nov 2025</span></div><h3>Intermediate SQL</h3><p>Filtering, aggregating and grouping data to answer questions with SQL queries.</p><a class="btn outline sm" href="certs/sql-intermediate.pdf" target="_blank" rel="noopener">View credential ↗</a></article>
+    <article class="slide ccard"><div class="cimg"><img src="img/certs/sql-joining.jpg" alt="Certificate: Joining Data in SQL" loading="lazy"></div><div class="cm"><small>SQL</small><span>DataCamp · Nov 2025</span></div><h3>Joining Data in SQL</h3><p>Combining tables with joins, set operations and subqueries.</p><a class="btn outline sm" href="certs/sql-joining.pdf" target="_blank" rel="noopener">View credential ↗</a></article>
+    <article class="slide ccard"><div class="cimg"><img src="img/certs/oracle-sql.jpg" alt="Certificate: Introduction to Oracle SQL" loading="lazy"></div><div class="cm"><small>SQL</small><span>DataCamp · Nov 2025</span></div><h3>Introduction to Oracle SQL</h3><p>Querying Oracle databases with SQL.</p><a class="btn outline sm" href="certs/oracle-sql.pdf" target="_blank" rel="noopener">View credential ↗</a></article>
+    <article class="slide ccard"><div class="cimg"><img src="img/certs/aws-cloud-practitioner.jpg" alt="Certificate: AWS Cloud Practitioner (CLF-C02)" loading="lazy"></div><div class="cm"><small>CLOUD</small><span>DataCamp · Dec 2025</span></div><h3>AWS Cloud Practitioner (CLF-C02)</h3><p>Cloud fundamentals on AWS: core services, security, pricing and the shared responsibility model.</p><a class="btn outline sm" href="certs/aws-cloud-practitioner.pdf" target="_blank" rel="noopener">View credential ↗</a></article>
+    <article class="slide ccard"><div class="cimg"><img src="img/certs/docker-intro.jpg" alt="Certificate: Introduction to Docker" loading="lazy"></div><div class="cm"><small>DEVOPS</small><span>DataCamp · Nov 2025</span></div><h3>Introduction to Docker</h3><p>Building and running containers and images with Docker.</p><a class="btn outline sm" href="certs/docker-intro.pdf" target="_blank" rel="noopener">View credential ↗</a></article>
+    <article class="slide ccard"><div class="cimg"><img src="img/certs/docker-intermediate.jpg" alt="Certificate: Intermediate Docker" loading="lazy"></div><div class="cm"><small>DEVOPS</small><span>DataCamp · Nov 2025</span></div><h3>Intermediate Docker</h3><p>Going further with Docker: multi-container applications, images, volumes and best practices.</p><a class="btn outline sm" href="certs/docker-intermediate.pdf" target="_blank" rel="noopener">View credential ↗</a></article>
+    <article class="slide ccard"><div class="cimg"><img src="img/certs/containerization.jpg" alt="Certificate: Containerization and Virtualization Concepts" loading="lazy"></div><div class="cm"><small>DEVOPS</small><span>DataCamp · Nov 2025</span></div><h3>Containerization and Virtualization Concepts</h3><p>The core ideas behind containers and virtual machines, and when to use each.</p><a class="btn outline sm" href="certs/containerization.pdf" target="_blank" rel="noopener">View credential ↗</a></article>
+    <article class="slide ccard"><div class="cimg"><img src="img/certs/kubernetes.jpg" alt="Certificate: Introduction to Kubernetes" loading="lazy"></div><div class="cm"><small>DEVOPS</small><span>DataCamp · Dec 2025</span></div><h3>Introduction to Kubernetes</h3><p>Deploying and managing containerized applications with Kubernetes.</p><a class="btn outline sm" href="certs/kubernetes.pdf" target="_blank" rel="noopener">View credential ↗</a></article>
+    <article class="slide ccard"><div class="cimg"><img src="img/certs/udemy-ai-intro.jpg" alt="Certificate: Introduction to Artificial Intelligence and Applications" loading="lazy"></div><div class="cm"><small>ARTIFICIAL INTELLIGENCE</small><span>Udemy · Dec 2025</span></div><h3>Introduction to Artificial Intelligence and Applications</h3><p>Foundations of artificial intelligence and its real-world applications.</p><a class="btn outline sm" href="https://ude.my/UC-041c5cdf-a10d-44eb-8403-18a10d997011" target="_blank" rel="noopener">View credential ↗</a></article>
+    <article class="slide ccard"><div class="cimg"><img src="img/certs/prompt-engineering.jpg" alt="Certificate: Understanding Prompt Engineering" loading="lazy"></div><div class="cm"><small>GENERATIVE AI</small><span>DataCamp · Nov 2025</span></div><h3>Understanding Prompt Engineering</h3><p>Writing effective prompts to get reliable answers from large language models.</p><a class="btn outline sm" href="certs/prompt-engineering.pdf" target="_blank" rel="noopener">View credential ↗</a></article>
+    <article class="slide ccard"><div class="cimg"><img src="img/certs/chatgpt-intro.jpg" alt="Certificate: Introduction to ChatGPT" loading="lazy"></div><div class="cm"><small>GENERATIVE AI</small><span>DataCamp · Nov 2025</span></div><h3>Introduction to ChatGPT</h3><p>Getting started with ChatGPT and using it for everyday tasks.</p><a class="btn outline sm" href="certs/chatgpt-intro.pdf" target="_blank" rel="noopener">View credential ↗</a></article>
+    <article class="slide ccard"><div class="cimg"><img src="img/certs/chatgpt-intermediate.jpg" alt="Certificate: Intermediate ChatGPT" loading="lazy"></div><div class="cm"><small>GENERATIVE AI</small><span>DataCamp · Nov 2025</span></div><h3>Intermediate ChatGPT</h3><p>Going further with ChatGPT: more advanced prompting and practical use cases.</p><a class="btn outline sm" href="certs/chatgpt-intermediate.pdf" target="_blank" rel="noopener">View credential ↗</a></article>
+  </div>
+  <div class="cnav"><button class="arrow s" id="cPrev" aria-label="Previous certificate">←</button><div class="dots" id="cDots"></div><button class="arrow s" id="cNext" aria-label="Next certificate">→</button></div>
+</section>
+
+<!-- ===== EDUCATION ===== -->
+<section class="edu" id="education">
+  <div class="sec-head"><div><span class="badge">EDUCATION</span><h2>Academic <i>background.</i></h2></div></div>
+  <div class="elist">
+    <article class="erow">
+      <div class="eyear"><b>2025 – 2026</b><span>Current · 5th year</span></div>
+      <div class="ecard">
+        <div class="etop"><h3>Engineering Degree in Big Data & Artificial Intelligence</h3><span class="hon now">In progress</span></div>
+        <p class="where">ENSA Tétouan</p>
+        <p>Final year of the engineering program: machine learning, deep learning, large-scale data processing and the final-year project.</p>
+        <ul class="tags"><li>Machine Learning</li><li>Deep Learning</li><li>Big Data</li><li>Data Visualization</li></ul>
+      </div>
+    </article>
+    <article class="erow">
+      <div class="eyear"><b>2022 – 2024</b><span>2 years</span></div>
+      <div class="ecard">
+        <div class="etop"><h3>Preparatory Classes</h3></div>
+        <p class="where">École Nationale des Sciences Appliquées de Tétouan</p>
+        <p>Two-year preparatory cycle at ENSA Tétouan, built on solid foundations in mathematics, physics and computer science.</p>
+        <ul class="tags"><li>Mathematics</li><li>Physics</li><li>Computer Science</li></ul>
+      </div>
+    </article>
+    <article class="erow">
+      <div class="eyear"><b>2022</b><span>Baccalaureate</span></div>
+      <div class="ecard">
+        <div class="etop"><h3>Baccalaureate in Physical Sciences</h3></div>
+        <p class="where">Mohamed Ibn Elhassan Elouazzani, Khémisset</p>
+        <p>Opened the way to engineering studies.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section class="exp" id="experience">
+  <div class="sec-head"><div><span class="badge">EXPERIENCE</span><h2>Professional <i>experience.</i></h2></div></div>
+  <article class="job">
+    <aside>
+      <div class="logo wide">S<img src="img/smartovate-logo.png" alt="Smartovate logo" onerror="this.remove()"></div>
+      <h3>Smartovate</h3>
+      <p class="meta">Remote · 2 months</p>
+      <p class="meta">July – August 2026</p>
+      <a class="li" href="https://www.linkedin.com/company/smartovate/" target="_blank" rel="noopener">in · Company on LinkedIn ↗</a>
+    </aside>
+    <div class="jb">
+      <h4>Project</h4>
+      <p>California Housing MLOps pipeline (see Projects): an end-to-end chain on Azure Machine Learning that takes a house-price regression model from training to a live REST API, with no manual step between a good model and its deployment.</p>
+      <h4>Key contributions</h4>
+      <ul class="pts"><li>Versioned the dataset as an Azure ML Data Asset and built a 4-step training pipeline (preparation, hyperparameter sweep, evaluation, registration) tracked with MLflow.</li><li>Added a quality gate so a model is registered only if its R² reaches 0.7; the reference run reached R² = 0.8087 (RMSE ≈ 50,063).</li><li>Automated the deployment with GitHub Actions: lint and tests, Docker image pushed to Azure Container Registry, then champion and challenger models behind a Managed Online Endpoint with an 80/20 A/B split, the trigger token being kept in Azure Key Vault.</li></ul>
+      <ul class="tags"><li>Azure ML</li><li>MLflow</li><li>GitHub Actions</li><li>Docker</li></ul>
+      <a class="btn outline sm" href="https://github.com/amalafenich/mlops-california-housing" target="_blank" rel="noopener">View GitHub repository ↗</a>
+    </div>
+  </article>
+</section>
+
+<!-- ===== SKILLS (edit the lists; logos come from the free Devicon library) ===== -->
+<section class="skills" id="skills">
+  <div class="sec-head"><div><span class="badge">SKILLS</span><h2>Tools and <i>technologies.</i></h2></div></div>
+  <div class="skgrid">
+    <div class="skcat"><h3>Languages</h3><ul class="chips"><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" loading="lazy" onerror="this.remove()">Python</li><li>SQL</li></ul></div>
+    <div class="skcat"><h3>Machine Learning & Deep Learning</h3><ul class="chips"><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" alt="" loading="lazy" onerror="this.remove()">Scikit-learn</li><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" alt="" loading="lazy" onerror="this.remove()">TensorFlow</li><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" alt="" loading="lazy" onerror="this.remove()">PyTorch</li><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/keras/keras-original.svg" alt="" loading="lazy" onerror="this.remove()">Keras</li><li>NLP</li><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg" alt="" loading="lazy" onerror="this.remove()">OpenCV</li><li>MediaPipe</li></ul></div>
+    <div class="skcat"><h3>Big Data & Engineering</h3><ul class="chips"><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg" alt="" loading="lazy" onerror="this.remove()">Spark</li><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" alt="" loading="lazy" onerror="this.remove()">Kafka</li><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" alt="" loading="lazy" onerror="this.remove()">Pandas</li><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" alt="" loading="lazy" onerror="this.remove()">NumPy</li><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="" loading="lazy" onerror="this.remove()">MongoDB</li><li>InfluxDB</li><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original.svg" alt="" loading="lazy" onerror="this.remove()">Grafana</li><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg" alt="" loading="lazy" onerror="this.remove()">Selenium</li></ul></div>
+    <div class="skcat"><h3>BI & Visualization</h3><ul class="chips"><li>Power BI</li><li>Tableau</li><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" alt="" loading="lazy" onerror="this.remove()">Matplotlib</li><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/plotly/plotly-original.svg" alt="" loading="lazy" onerror="this.remove()">Plotly</li></ul></div>
+    <div class="skcat"><h3>Cloud & Tools</h3><ul class="chips"><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="" loading="lazy" onerror="this.remove()">Docker</li><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="" loading="lazy" onerror="this.remove()">Git & GitHub</li><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="" loading="lazy" onerror="this.remove()">Linux</li><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="" loading="lazy" onerror="this.remove()">Azure</li><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original.svg" alt="" loading="lazy" onerror="this.remove()">Jupyter</li><li>Azure ML</li><li>MLflow</li><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" alt="" loading="lazy" onerror="this.remove()">GitHub Actions</li><li>CI/CD</li></ul></div>
+    <div class="skcat"><h3>Web & APIs</h3><ul class="chips"><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" alt="" loading="lazy" onerror="this.remove()">FastAPI</li><li>REST APIs</li><li>Pygame</li></ul></div>
+  </div>
+</section>
+
+<!-- ===== EXTRACURRICULAR (carousel: arrows, dots, auto-rotation) =====
+     2 photos per event. Put the image files in the same folder as index.html with these names:
+     extra-microsoft-1.jpg / -2.jpg, extra-cnr-1.jpg / -2.jpg, extra-martil-1.jpg / -2.jpg, extra-rabat-1.jpg / -2.jpg
+     A dashed "+" box stays visible until the photo exists. -->
+<section class="xs" id="extracurricular">
+  <div class="sec-head"><div><span class="badge">EXTRACURRICULAR</span><h2>Beyond the <i>classroom.</i></h2></div></div>
+  <div class="track xtrack" id="xTrack">
+      <article class="slide xcard">
+        <div class="xpics"><span class="xpic"><img src="extra-microsoft-1.jpg" alt="Microsoft event, Shaping the Future of Big Data &amp; AI, photo 1" loading="lazy" onerror="this.remove()"></span><span class="xpic"><img src="extra-microsoft-2.jpg" alt="Microsoft event, Shaping the Future of Big Data &amp; AI, photo 2" loading="lazy" onerror="this.remove()"></span></div>
+        <div class="xt"><div class="cm"><small>ORGANIZING COMMITTEE · AI GEEKS ENSATE</small><span>26 Oct 2024</span></div><h3>Microsoft event: Shaping the Future of Big Data &amp; AI</h3><p>I was a member of the organizing committee of the Microsoft event &quot;Shaping the Future of Big Data &amp; AI&quot;, organized by the AI Geeks club of ENSA Tétouan on 26 October 2024. Together with the rest of the committee, I helped bring the event to life.</p><ul class="tags"><li>Teamwork</li><li>Organization</li><li>Communication</li></ul></div>
+      </article>
+      <article class="slide xcard">
+        <div class="xpics"><span class="xpic"><img src="extra-cnr-1.jpg" alt="National Robotics Competition (MECA World Cup), photo 1" loading="lazy" onerror="this.remove()"></span><span class="xpic"><img src="extra-cnr-2.jpg" alt="National Robotics Competition (MECA World Cup), photo 2" loading="lazy" onerror="this.remove()"></span></div>
+        <div class="xt"><div class="cm"><small>ORGANIZING COMMITTEE · MECHATRONICS CLUB</small></div><h3>National Robotics Competition (MECA World Cup)</h3><p>I was part of the organizing committee of the National Robotics Competition, hosted by the Mechatronics Club of ENSA Tétouan. As a Big Data and AI student, I contributed in a technical and collaborative environment and gained hands-on experience in event organization, networking, communication with partners and adapting quickly to dynamic situations.</p><ul class="tags"><li>Teamwork</li><li>Organization</li><li>Communication</li><li>Networking</li></ul><a class="btn outline sm" style="margin-top:16px" href="https://www.linkedin.com/company/club-m%C3%A9catronique-ensat%C3%A9/" target="_blank" rel="noopener">Mechatronics Club on LinkedIn ↗</a></div>
+      </article>
+      <article class="slide xcard">
+        <div class="xpics"><span class="xpic"><img src="extra-martil-1.jpg" alt="Mediterranean Smart City Hackathon, photo 1" loading="lazy" onerror="this.remove()"></span><span class="xpic"><img src="extra-martil-2.jpg" alt="Mediterranean Smart City Hackathon, photo 2" loading="lazy" onerror="this.remove()"></span></div>
+        <div class="xt"><div class="cm"><small>HACKATHON · TEAM OF 5</small><span>13–15 Oct 2025</span></div><h3>Mediterranean Smart City Hackathon 2025</h3><p>With my team of five, I contributed to the 2nd edition of the Mediterranean Smart City Hackathon, held in Tétouan and Martil under the aegis of Abdelmalek Essaâdi University and the École Normale Supérieure of Martil. The event combined a bootcamp on soft, business and hard skills (AI, IoT, cybersecurity), a junior and kids hackathon, and a Smart City incubator for the projects born from it.</p><ul class="tags"><li>Smart City</li><li>Teamwork</li><li>Organization</li></ul></div>
+      </article>
+      <article class="slide xcard">
+        <div class="xpics"><span class="xpic"><img src="extra-rabat-1.jpg" alt="Game4Health hackathon, photo 1" loading="lazy" onerror="this.remove()"></span><span class="xpic"><img src="extra-rabat-2.jpg" alt="Game4Health hackathon, photo 2" loading="lazy" onerror="this.remove()"></span></div>
+        <div class="xt"><div class="cm"><small>HACKATHON · TEAM OF 5</small><span>3–4 Apr 2026</span></div><h3>Game4Health Hackathon</h3><p>With my team of five, I took part in Game4Health, a 48-hour hackathon held at iSMAGi in Rabat. The challenge: create the game that heals, by imagining, wiring, coding and pitching a solution at the crossroads of gaming and health, with IoT, game and VR development, and artificial intelligence.</p><ul class="tags"><li>IoT</li><li>Game &amp; VR</li><li>AI</li><li>Teamwork</li></ul></div>
+      </article>
+  </div>
+  <div class="cnav"><button class="arrow s" id="xPrev" aria-label="Previous">←</button><div class="dots" id="xDots"></div><button class="arrow s" id="xNext" aria-label="Next">→</button></div>
+</section>
+
+<!-- ===== CV ===== -->
+<section class="cvs" id="cv">
+  <div class="sec-head"><div><span class="badge">RESUME</span><h2>Download my <i>CV.</i></h2></div></div>
+  <div class="cvgrid">
+    <article class="cvcard"><div class="flag">EN</div><div><h3>CV in English</h3></div><div class="cvact"><button class="btn outline sm" type="button" data-cv="cv-en.pdf">View ↗</button><a class="btn primary sm" href="cv-en.pdf" download="CV_Amal_Afenich_EN.pdf">Download ⤓</a></div></article>
+    <article class="cvcard"><div class="flag">FR</div><div><h3>CV in French</h3></div><div class="cvact"><button class="btn outline sm" type="button" data-cv="cv-fr.pdf">View ↗</button><a class="btn primary sm" href="cv-fr.pdf" download="CV_Amal_Afenich_FR.pdf">Download ⤓</a></div></article>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact">
+  <div class="cbox">
+  <span class="badge">CONTACT</span>
+  <h2>Let's work together</h2>
+  <p>An internship, a project or a collaboration? Write to me, I reply quickly.</p>
+  <div class="cgrid">
+    <a class="clink" href="mailto:afenichamal15@gmail.com"><span class="ci">✉</span><div><small>Email</small><b>afenichamal15@gmail.com</b></div><i>↗</i></a>
+    <a class="clink" href="https://github.com/amalafenich" target="_blank" rel="noopener"><span class="ci">GH</span><div><small>GitHub</small><b>amalafenich (Afenich Amal)</b></div><i>↗</i></a>
+    <a class="clink" href="https://www.linkedin.com/in/amal-afenich-17257a2a8/" target="_blank" rel="noopener"><span class="ci">in</span><div><small>LinkedIn</small><b>Amal Afenich</b></div><i>↗</i></a>
+  </div>
+  </div>
+</section>
+</main>
+
+
+<!-- ===== PROJECT DETAILS (opens when you click "View details") ===== -->
+<dialog id="pd" aria-labelledby="pdTitle">
+  <button class="pd-x" id="pdClose" aria-label="Close details">✕</button>
+  <div class="pd-body">
+    <p class="pd-meta" id="pdMeta"></p>
+    <h3 id="pdTitle"></h3>
+    <div class="pd-shot" id="pdShot"></div>
+    <h4>Overview</h4><p id="pdOver"></p>
+    <h4>The challenge</h4><p id="pdChal"></p>
+    <h4>My approach</h4><ul class="pts" id="pdApp"></ul>
+    <h4>Results</h4><ul class="pts" id="pdRes"></ul>
+    <h4>Tech stack</h4><ul class="tags" id="pdTags"></ul>
+    <a class="btn primary" id="pdGit" href="#" target="_blank" rel="noopener">View code on GitHub ↗</a>
+  </div>
+</dialog>
+
+<dialog id="cvd" aria-labelledby="cvTitle">
+  <div class="cv-bar"><h3 id="cvTitle"></h3><a class="btn outline sm" id="cvOpen" href="#" target="_blank" rel="noopener">Open in new tab ↗</a><button class="arrow s" id="cvClose" aria-label="Close">✕</button></div>
+  <iframe id="cvFrame" title="CV" src="about:blank"></iframe>
+</dialog>
+
+<footer class="foot">© 2026 First Last · Big Data & AI Engineer · ENSA Tétouan</footer>
+
+<script src="extra.js"></script>
+<script>
+/* Menu underline follows the visible or clicked section */
+const links=[...document.querySelectorAll('.nav nav a')];
+const set=id=>links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+id));
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&set(e.target.id)),{rootMargin:'-40% 0px -55% 0px'});
+links.forEach(a=>{const s=document.querySelector(a.getAttribute('href'));if(s)io.observe(s);a.addEventListener('click',()=>set(a.getAttribute('href').slice(1)))});
+
+/* Carousels (projects and certificates) */
+const smooth=matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth';
+function carousel(track,prev,next,dots){
+  const items=[...track.querySelectorAll('.slide')];let cur=0;
+  const mark=i=>{cur=i;items.forEach((s,k)=>s.classList.toggle('on',k===i));if(dots)[...dots.children].forEach((d,k)=>d.classList.toggle('on',k===i))};
+  const go=i=>{i=Math.max(0,Math.min(items.length-1,i));items[i].scrollIntoView({behavior:smooth,inline:'center',block:'nearest'})};
+  track.addEventListener('scroll',()=>{const c=track.scrollLeft+track.clientWidth/2;let b=0,d=1e9;items.forEach((s,k)=>{const m=Math.abs(s.offsetLeft+s.offsetWidth/2-c);if(m<d){d=m;b=k}});if(b!==cur)mark(b)},{passive:true});
+  items.forEach((s,k)=>s.addEventListener('click',e=>{if(k!==cur){e.preventDefault();go(k)}}));
+  prev.onclick=()=>go(cur-1);next.onclick=()=>go(cur+1);
+  if(dots)items.forEach((_,k)=>{const b=document.createElement('button');b.setAttribute('aria-label','Go to item '+(k+1));b.onclick=()=>go(k);dots.append(b)});
+  mark(0);
+}
+carousel(document.getElementById('pTrack'),document.getElementById('pPrev'),document.getElementById('pNext'));
+carousel(document.getElementById('cTrack'),document.getElementById('cPrev'),document.getElementById('cNext'),document.getElementById('cDots'));
+
+/* Extracurricular carousel: arrows, dots, swipe, auto-rotation (pauses on hover/focus, only while visible) */
+(function(){
+  const sec=document.getElementById('extracurricular'),tr=document.getElementById('xTrack'),dots=document.getElementById('xDots');
+  if(!sec||!tr)return;
+  const items=[...tr.querySelectorAll('.xcard')];let cur=0,timer=null,visible=false;
+  const mark=i=>{cur=i;items.forEach((s,k)=>s.classList.toggle('on',k===i));[...dots.children].forEach((d,k)=>d.classList.toggle('on',k===i))};
+  const go=i=>{i=(i+items.length)%items.length;const s=items[i];tr.scrollTo({left:s.offsetLeft+s.offsetWidth/2-tr.clientWidth/2,behavior:smooth})};
+  tr.addEventListener('scroll',()=>{const c=tr.scrollLeft+tr.clientWidth/2;let b=0,d=1e9;items.forEach((s,k)=>{const m=Math.abs(s.offsetLeft+s.offsetWidth/2-c);if(m<d){d=m;b=k}});if(b!==cur)mark(b)},{passive:true});
+  items.forEach((s,k)=>s.addEventListener('click',()=>{if(k!==cur)go(k)}));
+  items.forEach((_,k)=>{const b=document.createElement('button');b.setAttribute('aria-label','Go to item '+(k+1));b.onclick=()=>go(k);dots.append(b)});
+  document.getElementById('xPrev').onclick=()=>go(cur-1);
+  document.getElementById('xNext').onclick=()=>go(cur+1);
+  const stop=()=>{clearInterval(timer);timer=null};
+  const play=()=>{stop();if(reduce||!visible)return;timer=setInterval(()=>go(cur+1),6000)};
+  ['mouseenter','focusin','touchstart'].forEach(e=>sec.addEventListener(e,stop,{passive:true}));
+  ['mouseleave','focusout','touchend'].forEach(e=>sec.addEventListener(e,play,{passive:true}));
+  new IntersectionObserver(es=>{visible=es[0].isIntersecting;visible?play():stop()},{threshold:.4}).observe(tr);
+  mark(0);
+})();
+
+/* Project details window. Edit the text for each project below (same order as the cards). */
+const DETAILS=[
+ {over:"BioSentry is a pharmacovigilance platform built by a team of four (Aya Chakour, Amal Afenich, Oumaima Enajjari, Khouloud El Hajji) at ENSA Tétouan for the Web Analysis module. It gathers data on drug side effects from public medical sources, tracks how often each effect is mentioned over time and raises an alert level when the trend looks abnormal. The goal is to help spot a signal worth investigating earlier, not to replace a health professional.",
+  chal:"Information on side effects is scattered across official drug sheets, scientific papers, clinical trials, adverse-event reports and patient forums, and reading it by hand is slow. Rare or late effects only appear once a drug is widely used, so the data had to be unified, cleaned and weighted by source reliability before any model could be applied.",
+  app:["Built a reference list of 513 medicines with the RxNorm API, then collected data from 7 sources (MedlinePlus, PubMed, ClinicalTrials.gov, openFDA, Drugs.com, WebMD, Reddit) using APIs and Selenium scrapers.","Extracted medical entities with BioBERT, scored the reliability of each source with the HITS algorithm on a Neo4j graph, then normalized terms and dates.","Aggregated mentions per drug, side effect and month in MongoDB Atlas, which became the input of the models.","Compared K-Means, agglomerative clustering and HDBSCAN (silhouette, Calinski-Harabasz, Davies-Bouldin) and detected anomalies with a rolling Z-score, Isolation Forest and Local Outlier Factor.","Combined the three detectors: the alert level (normal, moderate, high, critical) depends on how many algorithms flag the same drug, side effect and month."],
+  res:["18,313 raw documents collected and 19,974 aggregated records covering 326 drugs and 2,212 distinct side effects.","1,002 records flagged out of 19,974: 885 moderate and 117 high alerts, and none reached the critical level, which kept the alerts selective.","Delivered a project report, a presentation and a demo video of the dashboard."]},
+ {over:"Built during my internship at Smartovate (July–August 2026). An automated chain that takes a house-price regression model from training to production on Azure Machine Learning. The dataset is versioned as an immutable Data Asset, the model is trained and tracked with MLflow, and every new model is deployed automatically through GitHub Actions as a REST API.",
+  chal:"Training a good model once is easy; making the path to production repeatable is harder. The pipeline had to decide by itself whether a model is good enough to be released, trigger the deployment without exposing any secret, and run two model versions side by side to compare them safely.",
+  app:["Versioned the California Housing dataset (about 20,640 rows) as an Azure ML Data Asset and built a 4-step pipeline: data preparation, hyperparameter sweep, evaluation and registration.","Trained a Random Forest regressor with a sweep over n_estimators (100 to 400) and max_depth (5 to 25), tracked with MLflow.","Registered the model only if its R² reaches 0.7, then triggered GitHub Actions through repository_dispatch, with the token stored in Azure Key Vault.","Wrote the CI/CD workflow: flake8 and pytest, Docker image pushed to Azure Container Registry, then deployment of a champion and a challenger model on a Managed Online Endpoint.","Split the traffic 80/20 between champion and challenger for A/B testing and smoke-tested the endpoint."],
+  res:["Reference run: R² = 0.8087 and RMSE ≈ 50,063 on the validation set.","A live REST endpoint that returns HTTP 200 with a prediction, backed by unit tests on the data preparation and scoring code."]},
+ {over:"An end-to-end data engineering project that collects live weather measurements from two independent providers, OpenWeather and WeatherAPI, and exposes them as time series in Grafana. It shows the full path of a streaming architecture, from the API call to the dashboard.",
+  chal:"Two providers can report different values for the same city at the same moment. The pipeline had to ingest both continuously, keep events reliable between components and store them in a form that makes comparing temperature and humidity over time easy.",
+  app:["Wrote a Python producer that calls both weather APIs every 30 seconds, handles HTTP errors, shuts down gracefully and publishes JSON events to an Apache Kafka topic.","Built a Spark Structured Streaming consumer that reads the topic with an explicit schema (city, temperature and humidity from each provider, timestamp).","Wrote each micro-batch to InfluxDB as time-series points tagged by city.","Containerized Kafka, InfluxDB and Grafana with Docker Compose and kept every secret in environment variables."],
+  res:["A working live pipeline whose data is ready for Grafana panels: temperature per provider, difference between providers, humidity comparison and historical trends.","Planned next steps: multi-city collection, data-quality alerts when providers disagree and CI with GitHub Actions."]},
+ {over:"SignSense AI is an interactive full-stack application that recognizes American Sign Language alphabet gestures in real time and turns them into text. It is an academic group project and a prototype for static ASL letters, not a replacement for professional interpretation.",
+  chal:"Recognizing hand signs from a webcam is sensitive to background and lighting, and the app has to answer fast enough to feel live. The project therefore classifies a normalized hand skeleton instead of the raw video frame.",
+  app:["Detected the 21 hand landmarks in the browser with MediaPipe Hands and converted them into a normalized 64 × 64 skeleton image.","Trained a CNN with TensorFlow/Keras (three convolution blocks, a dense layer and dropout) to classify the letters A to Z, documented in a training notebook.","Served the model through a FastAPI service that returns the predicted letter, a confidence score and the top five classes.","Built a React interface to compose sentences from the detected letters, with optional translation through OpenRouter and browser text-to-speech."],
+  res:["A working real-time prototype: webcam in, letter, confidence and top-5 predictions out.","Letters can be assembled into sentences, translated into another language and read aloud."]},
+ {over:"A 2D dodging game with no keyboard or controller: the player steers a car with one hand in front of the webcam. It combines computer vision and game development in a small real-time application.",
+  chal:"Hand gestures have to be recognized reliably, frame after frame, and turned into game actions without noticeable delay while the game keeps running at 60 frames per second.",
+  app:["Captured the webcam with OpenCV and extracted the 21 hand landmarks with MediaPipe Hands.","Wrote a GestureDetector class that counts raised fingers by comparing each fingertip with its middle joint (the thumb is compared horizontally) and recognizes four gestures: one finger, five fingers, closed fist and no hand.","Mapped the gestures to actions: one finger moves up, an open hand moves forward, a fist moves down and no hand stops the car.","Built the Pygame game (800 × 500 at 60 FPS) with random-speed obstacles, collision detection, a score and a new level every 15 seconds that speeds up the road and the obstacles."],
+  res:["A playable game controlled only by hand gestures, with a camera preview showing the landmarks, the detected gesture and the action.","Includes a HUD (score, distance, time, level), a game-over screen with replay and a clean release of the camera."]}
+];
+const pd=document.getElementById('pd'),$=id=>document.getElementById(id);
+const list=(el,a,tag)=>el.innerHTML=a.map(t=>`<li>${t}</li>`).join('');
+document.querySelectorAll('[data-p]').forEach(b=>b.addEventListener('click',()=>{
+  const card=b.closest('.pcard');if(!card.classList.contains('on'))return;
+  const d=DETAILS[+b.dataset.p]||DETAILS[0];
+  $('pdMeta').textContent=card.querySelector('.ph span').textContent+'  ·  '+card.querySelector('.pt small').textContent;
+  $('pdTitle').textContent=card.querySelector('h3').textContent;
+  $('pdShot').className='pd-shot '+[...card.querySelector('.shot').classList].find(c=>/^s\d$/.test(c));
+  $('pdShot').innerHTML=card.querySelector('.shot').innerHTML;
+  $('pdOver').textContent=T(d.over);$('pdChal').textContent=T(d.chal);
+  list($('pdApp'),d.app.map(T));list($('pdRes'),d.res.map(T));
+  $('pdTags').innerHTML=card.querySelector('.tags').innerHTML;
+  $('pdGit').href=card.querySelector('.pf a').href;
+  pd.showModal();pd.scrollTop=0;document.body.classList.add('lock');
+}));
+$('pdClose').onclick=()=>pd.close();
+/* CV viewer */
+const cvd=$('cvd'),cvf=$('cvFrame');
+document.querySelectorAll('[data-cv]').forEach(b=>b.addEventListener('click',()=>{
+  const src=b.dataset.cv;
+  $('cvTitle').textContent=b.closest('.cvcard').querySelector('h3').textContent;
+  cvf.src=src+'#view=FitH';$('cvOpen').href=src;
+  cvd.showModal();document.body.classList.add('lock');
+}));
+$('cvClose').onclick=()=>cvd.close();
+cvd.addEventListener('click',e=>{if(e.target===cvd)cvd.close()});
+cvd.addEventListener('close',()=>{cvf.src='about:blank';document.body.classList.remove('lock')});
+pd.addEventListener('click',e=>{if(e.target===pd)pd.close()});
+pd.addEventListener('close',()=>document.body.classList.remove('lock'));
+</script>
+</body>
+</html>
